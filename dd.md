@@ -47,3 +47,9 @@ Unmount
 sudo umount /mnt
 ```
 Now reboot & enjoy Ubuntu ^_^
+
+dd
+
+```
+sudo dd if=usb.img of=/dev/sdb bs=8192;sync;
+```
