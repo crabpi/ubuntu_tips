@@ -2,7 +2,8 @@
 
 Installing on Ubuntu is easy with our Ubuntu PPA
 ```
-sudo add-apt-repository ppa:fontforge/fontforge;
-sudo apt-get update;
-sudo apt-get install fontforge;
+sudo add-apt-repository ppa:fontforge/fontforge
+sudo apt-get update
+sudo apt-get install fontforge
+sudo apt-get install python-fontforge
 ```
