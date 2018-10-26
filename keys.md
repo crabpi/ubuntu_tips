@@ -1,4 +1,5 @@
 字母键及数字键
+```
     keycode 38 (keysym 0x61, a)
     keycode 56 (keysym 0x62, b)
     keycode 54 (keysym 0x63, c)
@@ -35,7 +36,9 @@
     keycode 16 (keysym 0x37, 7)
     keycode 17 (keysym 0x38, 8)
     keycode 18 (keysym 0x39, 9)
+```
 功能键
+```
     keycode 67 (keysym 0xffbe, F1)
     keycode 68 (keysym 0xffbf, F2)
     keycode 69 (keysym 0xffc0, F3)
@@ -48,7 +51,9 @@
     keycode 76 (keysym 0xffc7, F10)
     keycode 95 (keysym 0xffc8, F11)
     keycode 96 (keysym 0xffc9, F12)
+```
 控制键
+```
     keycode 50 (keysym 0xffe1, Shift_L)
     keycode 62 (keysym 0xffe2, Shift_R)
     keycode 37 (keysym 0xffe3, Control_L)
@@ -69,7 +74,9 @@
     keycode 113 (keysym 0xff51, Left)
     keycode 114 (keysym 0xff53, Right)
     keycode 107 (keysym 0xff61, Print)
+```
 符号键
+```
     keycode 20 (keysym 0x2d, minus)
     keycode 21 (keysym 0x3d, equal)
     keycode 34 (keysym 0x5b, bracketleft)
@@ -81,28 +88,33 @@
     keycode 60 (keysym 0x2e, period)
     keycode 61 (keysym 0x2f, slash)
     keycode 49 (keysym 0x60, grave)
+```
 
-小键盘我没有测，不影响理解了。
+
 
 组合键输入： 左shift1,2,3,q,w,e 与右shift1,2,3,q,w,e
+```
+    keycode 10 (keysym 0x21, exclam)
+    keycode 11 (keysym 0x40, at)
+    keycode 12 (keysym 0x23, numbersign)
+    keycode 24 (keysym 0x51, Q)
+    keycode 25 (keysym 0x57, W)
+    keycode 26 (keysym 0x45, E)
+    keycode 10 (keysym 0x21, exclam)
+    keycode 11 (keysym 0x40, at)
+    keycode 12 (keysym 0x23, numbersign)
+    keycode 24 (keysym 0x51, Q)
+    keycode 25 (keysym 0x57, W)
+    keycode 26 (keysym 0x45, E)
+```
 
-    keycode 10 (keysym 0x21, exclam)
-    keycode 11 (keysym 0x40, at)
-    keycode 12 (keysym 0x23, numbersign)
-    keycode 24 (keysym 0x51, Q)
-    keycode 25 (keysym 0x57, W)
-    keycode 26 (keysym 0x45, E)
-    keycode 10 (keysym 0x21, exclam)
-    keycode 11 (keysym 0x40, at)
-    keycode 12 (keysym 0x23, numbersign)
-    keycode 24 (keysym 0x51, Q)
-    keycode 25 (keysym 0x57, W)
-    keycode 26 (keysym 0x45, E)
 我们看到，左shift+1, 右shift+1, 1的keycode 都是10，
 但是，单按键10映射到0x31, 而shift键按下时映射到0x21
 同样的keycode 24, 不按shift 映射到q, 按shift映射到Q
 
 a.组合键盘keycode, 研究发现，ctrl+字母数字键，alt+字母数字键其keycode,及keysym与不按ctrl,alt一致
+```
+
 keycode 10 (keysym 0x31, 1)
 keycode 11 (keysym 0x32, 2)
 keycode 12 (keysym 0x33, 3)
@@ -110,11 +122,12 @@ keycode 24 (keysym 0x71, q)
 keycode 25 (keysym 0x77, w)
 
 keycode 26 (keysym 0x65, e)
+```
 
 可见keycode 是不变的，叫键盘扫描码， 根据不同状态映射成不同符号
-
 b.键盘符号对应的英文名称,
 state 含义还不是很清楚，当然是与状态有关，待叙吧。
+```
 
 state 0x11, keycode 49 (keysym 0x7e, asciitilde)
 state 0x11, keycode 10 (keysym 0x21, exclam)
@@ -143,3 +156,4 @@ state 0x10, keycode 66 (keysym 0xffe5, Caps_Lock)
 state 0x12, keycode 77 (keysym 0xff7f, Num_Lock)
 state 0x2, keycode 37 (keysym 0xffe3, Control_L)
 state 0x6, keycode 54 (keysym 0x43, C)
+```
